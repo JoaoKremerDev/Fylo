@@ -4,7 +4,6 @@ body{
     background-color: hsl(217, 30%, 17%);
     font-family: 'Open Sans', sans-serif;
     color: white;
-    box-sizing: border-box;
 }
 ul, li{
     text-decoration: none;
@@ -241,16 +240,6 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
 
 =========================== access  ==================== */
 
-
-.container-access{
-    margin: 0 auto;
-    max-width: 600px;
-    background-color: hsl(217, 28%, 15%);
-    height: 200px;
-    position: relative;
-    bottom: -100px;
-    border-radius: 10px;
-}
 
 .footer{
     padding: 60px 0px;

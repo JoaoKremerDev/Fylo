@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(217, 30%, 17%);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    margin-top: 40px;
+}
+
+
+/*=====================HEADER===============*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.menu-info ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-info li{
+   margin: 10px 10px;
+}
+
+.menu-info a{
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.menu .logo{
+    padding: 0px 30px;
+    margin-left: 30px;
+}
+
+.menu img{
+    max-width: 100%;
+}
+
+
+/* ================== INTRO ==================*/
+
+.intro-img{
+    max-width: 400px;
+}
+
+.intro-img img{
+    display: block;
+    max-width: 100%;
+}
+
+.first-info{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.intro-title{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.intro-p{
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.intro-button a{
+    display: block;
+    font-size: 1.25em;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.intro-button{
+    max-width: 300px;
+    border-radius: 10px;
+    border: none; 
+    outline: none;
+    background-color: #4FC2D5;
+    margin-bottom: 40px;
+}
+
+.curvy-bg{
+    width: 100%;
+    height: 45vh    ;
+    z-index: -1;
+    position: absolute;
+    bottom: 0px
+}
+
+/* ==================MAIN================= */
+.duties-bg{
+    background-color:#181F2B;
+}
+.duties{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px 0px;
+}
+
+.duties-item{
+    text-align: center;
+    flex: 1 1 269px;
+    margin: 0px 20px;
+}
+
+.duties-item h2{
+    font-size: 1.25em;
+}
+
+.duties-item p{
+    font-size: 1.125em;
+}
+
+
+/*===============PRODUCTIVE================*/
+
+.productive{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productive-img{
+    flex: 1 1 300px;
+    max-width: auto;
+    margin: 0px 40px;
+}
+.productive-img img{
+    display: block;
+    max-width: 100%;
+}
+.productive-info{
+    flex:  1 1 300px;
+    justify-content: flex-start;
+}
+
+.productive-info h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.productive-info p{
+    font-size: 0.9em;
+    max-width: 60ch;
+}

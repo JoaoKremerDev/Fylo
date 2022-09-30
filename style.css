@@ -148,7 +148,7 @@ ul, li{
 .productive-img{
     flex: 1 1 300px;
     max-width: auto;
-    margin: 0px 40px;
+    margin: 40px;
 }
 .productive-img img{
     display: block;
@@ -167,4 +167,25 @@ ul, li{
 .productive-info p{
     font-size: 0.9em;
     max-width: 60ch;
+}
+.info-link{
+    display: flex;
+    gap: 10px;
+    color: #4FC2D5;
+    text-decoration: none;
+    position: relative;;
+
+}
+.borda{
+    display:block;
+    width: 150px;
+    position: absolute;
+    height: 0.2px;
+    background-color: #4FC2D5;
+}
+.imagem-productive{
+    display: block;
+    max-width: 15px;
+    max-height: 15px;
+    align-self: center;
 }

@@ -342,5 +342,11 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
         align-items: center;
         text-align: center;
     }  
-   
+
+    .header{
+        margin-bottom: 150px;
+    }
+    .menu-info{
+        margin: 0 auto;
+    }
 }

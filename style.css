@@ -5,9 +5,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-ul, li{
+ul, li, a{
     text-decoration: none;
     list-style: none;
+    color: white;   
+    padding: 0px;
 }
 .container{
     max-width: 960px;
@@ -41,6 +43,14 @@ ul, li{
     color: white;
     cursor: pointer;
     font-size: 1.25em;
+    transition: 0.4s ease-in-out;   
+}
+.menu-info ul li a:hover{
+    border-bottom: 1px solid white;
+    transition: 0.5 ease-in-out;
+    background-color: #5FDDD9;
+    padding: 13px;
+    border-radius: 20px;
 }
 
 .menu .logo{
@@ -98,6 +108,12 @@ ul, li{
     outline: none;
     background-color: #4FC2D5;
     margin-bottom: 40px;
+    transition: 0.4s ease-in-out;
+}
+.intro-button:hover{
+    background-color: #5FDDD9;
+    font-size: 1em;
+    transition: 0.4s ease-in-out;
 }
 
 .curvy-bg{
@@ -125,10 +141,16 @@ ul, li{
     text-align: center;
     flex: 1 1 269px;
     margin: 0px 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .duties-item h2{
     font-size: 1.25em;
+}
+.duties-item:hover{
+   font-size: 1.1em;
+   transition: 0.5s ease-in-out;
 }
 
 .duties-item p{
@@ -156,7 +178,7 @@ ul, li{
 }
 .productive-info{
     flex:  1 1 300px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .productive-info h2{
@@ -174,6 +196,7 @@ ul, li{
     color: #4FC2D5;
     text-decoration: none;
     position: relative;
+    align-self: center;
 
 }
 .borda{
@@ -182,7 +205,7 @@ ul, li{
     position: absolute;
     height: 0.2px;
     background-color: #4FC2D5;
-
+    top: 12px;
 }
 .imagem-productive{
     display: block;
@@ -275,6 +298,11 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
     flex: 2 1 0px;
     padding: 10px 50px;
     margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+.form-form input:hover{
+   font-size: 1em;
+   transition: 0.3s ease-in-out;
 }
 
 .form-form button {
@@ -283,7 +311,7 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
     border: none;
     border-radius: 15px;
     flex: 1;
-    
+    transition: 0.3s ease-in-out;
 }
 .form-form button a{
     padding: 10px 15px;
@@ -292,6 +320,11 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
     font-size: 1.25em;
 }
 
+.form-form button:hover{
+    background-color: #5FDDD9;
+    transition: 0.3s ease-in-out;
+    font-size: 0.9em;
+}
 
 
 
@@ -306,13 +339,63 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
 
 
 
-.footer{
+footer{
     padding: 60px 0px;
     background-color: hsl(216, 53%, 9%);
+    
+}
+.footer-container{
+    max-width: 90%;
+    margin: 0 auto;
 }
 
+.footer-logo{
+    margin-top: 200px;
+}
 
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 0.9em;
+    margin: 40px 20px;
+    gap: 20px;
+}
+.footer-location{
+    flex: 0 0 10px;
+    max-width: 30px;
+    margin-top: 20px;
+}
 
+.footer-number-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+.footer-number-email img{
+    margin-right: 10px;
+}
+
+.footer-about-us li, .footer-contact li{
+    margin-bottom: 10px;
+}
+
+.footer-item{
+    flex: 1 1 200px;
+}
+.footer-sociais{
+    display: flex;
+    flex: 1 0 100px;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+.sociais-img img{
+    max-width: 100%;
+
+}
 
 
 /* ============ MEDIAS =============*/
@@ -331,6 +414,20 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
         max-width: 400px;
         margin: 0 auto;
     }
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 0.9em;
+    }
+    .footer-location{
+        max-width: 10px;
+    }
+    .footer-contact li a {
+        text-align: start;
+    }
+
 }
 
 @media (max-width:680px){
@@ -348,5 +445,11 @@ E EU NÃO IREI LEMBRAR COMO EU FIZ ISSO! BOA SORTE NO FUTURO!==
     }
     .menu-info{
         margin: 0 auto;
+    }
+    .info-link{
+        justify-content: center;
+    }
+    .borda{
+        width: 170px;
     }
 }
